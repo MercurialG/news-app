@@ -11,7 +11,7 @@ function SearchBox({}: Props) {
   const handleSearch = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!input) return;
-    router.push(`/searh?term=${input}`);
+    router.push(`/search?term=${input}`);
   };
   return (
     <form
